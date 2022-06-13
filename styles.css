@@ -1,0 +1,163 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --ff-primary: "Source Sans Pro";
+  --ff-secondary: "Source Code Pro";
+
+  --fw-regular: 300;
+  --fw-bold: 900;
+
+  --clr-light: #fff;
+  --clr-grey: rgb(119, 119, 119);
+  --clr-mid: #583259;
+  --clr-dark: black;
+  --clr-accent: #5a5a88;
+
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.25rem;
+  --fs-text: 1rem;
+}
+
+@media (min-width: 800px) {
+  :root {
+    --fs-h1: 4.5rem;
+    --fs-h2: 3.75rem;
+    --fs-h3: 1.5rem;
+    --fs-text: 1.125rem;
+  }
+}
+
+/* General Styles */
+
+body {
+  background-color: var(--clr-light);
+  margin: 0;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-text);
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Typography */
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+  margin: 0;
+}
+
+h1 {
+  font-size: var(--fs-h1);
+}
+h2 {
+  font-size: var(--fs-h2);
+}
+h3 {
+  font-size: var(--fs-h3);
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-dark);
+}
+
+.logo {
+  font-size: var(--fs-h3);
+  font-family: var(--ff-primary);
+  text-align: center;
+}
+
+/* header */
+
+/* The navigation bar */
+.header {
+  /*overflow: hidden;*/
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 86%,
+    rgba(229, 233, 233, 0.4078724041533547) 100%
+  );
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 15px 15px 15px;
+  position: relative;
+}
+
+/* Links inside the navbar */
+.nav2 a {
+  text-align: center;
+  padding: 0 15px;
+  text-decoration: none;
+  display: inline;
+}
+ul li {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline;
+  flex: right;
+}
+
+/* Change background on mouse-over */
+.nav2 a:hover {
+  color: var(--clr-grey);
+}
+
+.nav2 {
+  margin: 0;
+  padding: 0;
+}
+
+/* About */
+
+.about {
+  display: flex;
+  padding: 15px;
+  height: 100vh;
+}
+
+.about-left {
+  width: 50%;
+  flex: left;
+}
+
+.about-right {
+  width: 50%;
+  flex: left;
+}
+
+img {
+  width: 50%;
+  height: auto;
+}
+/* Projects */
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project__item {
+  margin: 5px;
+}
+
+.project__item a img {
+  border-radius: 5px;
+}
+/* Footer*/
